@@ -83,6 +83,10 @@ public void place(View view){
         return;
     }
     turn++;
+    if (turn == 9){
+        info.setText("It's a Draw! ...Typical");
+        return;
+    }
     player = 3 - player;
     info.setText("Player "+player+" to move");
 }
